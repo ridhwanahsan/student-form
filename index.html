@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="createStudentBtn">Create Student</button>
+        <h2>All Students</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Photo</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                    <th>createdat time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data rows will go here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Create Student Modal -->
+    <div id="createStudentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create Student</h2>
+            <form id="studentForm">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="text" id="photo" name="photo" placeholder="Photo" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="mobile" name="mobile" placeholder="Mobile" required>
+                <input type="text" id="location" name="location" placeholder="Location" required>
+                <button type="submit">Create</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- View Student Modal -->
+    <div id="viewStudentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-view">&times;</span>
+            <h2>Student Details</h2>
+            <p id="studentDetails"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
